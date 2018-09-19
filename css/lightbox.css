@@ -1,0 +1,32 @@
+#lightboxOverlay {
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%; height:100vh;
+  background:rgba( 0, 0, 0, 0.5 ) url(../images/loading.gif) center no-repeat;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+#lightboxContainer {
+  position:relative;
+  margin:20px;
+}
+
+#lightboxImage {
+  border:5px solid #fff;
+  box-shadow:0 0 20px #000;
+  max-width:80vw;
+  max-height:80vh;
+}
+
+#lightboxClose {
+  position:absolute;
+  top:-15px;
+  right:-15px;
+  cursor: pointer;
+}
+
+/* remove hyperlink underline caused by white space between thumbnails */
+a[data-lightbox] { text-decoration:none; }
